@@ -36,6 +36,7 @@ end
 def movies_with_director_key(name, movies_collection)
   new_array = []
   movies_collection.each do |n, m|
+    movies_with_director_names(n, m)
     new_array << m
   end
   return new_array
